@@ -2,7 +2,7 @@
 
 def dec_bin():
     _usr_input = int(input("\nDecimal: "))
-    _usr_output = lambda _usr_input: format(_usr_input, 'b')
+    _usr_output = "{0:b}".format(_usr_input)
     print("The result is", _usr_output(_usr_input), ".\n")
 
 def bin_dec():
