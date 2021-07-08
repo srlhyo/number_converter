@@ -3,30 +3,30 @@
 def dec_bin():
     _usr_input = int(input("\nDecimal: "))
     _usr_output = "{0:b}".format(_usr_input)
-    print("The result is", _usr_output(_usr_input), ".\n")
+    pprint(f"The result is {_usr_output}.\n")
 
 def bin_dec():
     _usr_input = int(input("\nBinary: "), 2)
-    print("The result is", _usr_input, ".\n")
+    print(f"The result is {_usr_input}.\n")
 
 def dec_hex():
     _usr_input = int(input("\nDecimal: "))
     _usr_output = "{0:X}".format(_usr_input)
-    print("The result is", _usr_output, ".\n")
+    print(f"The result is {_usr_output}.\n")
 
 def hex_dec():
     _usr_input = int(input("\nHexadecimal: "), 16)
-    print("The result is", _usr_input, ".\n")
+    print(f"The result is {_usr_input}.\n")
 
 def bin_hex():
     _usr_input = int(input("\nBinary: "),2)
     _usr_output = "{0:X}".format(_usr_input)
-    print("The result is", _usr_output, ".\n")
+    print(f"The result is {_usr_output}.\n")
 
 def hex_bin():
     _usr_input = int(input("\nHexadecimal: "),16)
     _usr_output = "{0:b}".format(_usr_input)
-    print("The result is", _usr_output, ".\n")
+    print(f"The result is {_usr_output}.\n")
 
 exit_btn = False
 while exit_btn == False:
