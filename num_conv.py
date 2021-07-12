@@ -32,25 +32,25 @@ exit_btn = False
 while exit_btn == False:
 
 
-    usr_intro = input("\nConvert from: (H)exadecimal, (B)inary or (D)ecimal\n")
-    usr_result = input("Converting to: (H)exadecimal, (B)inary or (D)ecimal\n")
+    usr_intro = input("\nConvert from: (H)exadecimal, (B)inary or (D)ecimal\n").capitalize()
+    usr_result = input("Converting to: (H)exadecimal, (B)inary or (D)ecimal\n").capitalize()
 
-    if usr_intro == "H" or usr_intro == "h" and usr_result == "B" or usr_result == "b": 
+    if usr_intro == "H" and usr_result == "B": 
       hex_bin() 
       exit_btn = True
-    elif usr_intro == "B" or usr_intro == "b" and usr_result == "H" or usr_result == "h": 
+    elif usr_intro == "B" and usr_result == "H": 
       bin_hex() 
       exit_btn = True
-    elif usr_intro == "D" or usr_intro == "d" and usr_result == "B" or usr_result == "b": 
+    elif usr_intro == "D" and usr_result == "B": 
       dec_bin() 
       exit_btn = True
-    elif usr_intro == "B" or usr_intro == "b" and usr_result == "D" or usr_result == "d": 
+    elif usr_intro == "B" and usr_result == "D": 
       bin_dec() 
       exit_btn = True
-    elif usr_intro == "D" or usr_intro == "d" and usr_result == "H" or usr_result == "h": 
+    elif usr_intro == "D" and usr_result == "H": 
       dec_hex() 
       exit_btn = True
-    elif usr_intro == "H" or usr_intro == "h" and usr_result == "D" or usr_result == "d": 
+    elif usr_intro == "H" and usr_result == "D": 
       hex_dec() 
       exit_btn = True
     else: 
